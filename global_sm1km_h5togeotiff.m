@@ -67,7 +67,8 @@ for idoy = 1 %:1:365
     data_global = zeros([18*1200,36*1200],'int16') -1 ;
     for i_hv =1:lenhv
         try
-            ihv = hv_all(i_hv,:);
+            % ihv = hv_all(i_hv,:);
+            ihv = hv_all(i_hv).name;
             
             i0=find(ihv=='h');
             i00=i0(1);
